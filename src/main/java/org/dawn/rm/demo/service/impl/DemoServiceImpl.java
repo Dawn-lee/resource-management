@@ -19,7 +19,7 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public List<DemoVO> getList() {
-        List<Demo> demoList = demoMapper.getList();
+        List<Demo> demoList = demoMapper.selectList(null);
         List<DemoVO> demoVOList = new ArrayList<>();
         demoList.stream().forEach(demo -> {
             DemoVO demoVO = new DemoVO();
