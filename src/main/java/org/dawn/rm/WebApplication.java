@@ -1,4 +1,4 @@
-package org.dawn.rm.demo;
+package org.dawn.rm;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
