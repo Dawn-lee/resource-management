@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /rm
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:
+    username: dawn
+    password: 111111
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: org.dawn.rm.db.model
+  configuration:
+    map-underscore-to-camel-case: true
